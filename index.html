@@ -3,53 +3,405 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ansaf Muhammed P T - Backend Developer Portfolio. Built with minimalist design, glassmorphism, and modern web standards.">
+    <meta name="description" content="Ansaf Muhammed P T - Java Backend Developer Portfolio. Experienced in Spring Boot, Microservices, SQL, and Cloud.">
     <meta name="author" content="Ansaf Muhammed P T">
-    <meta name="theme-color" content="#0f172a">
+    <meta name="theme-color" content="#0a0a1a">
     <title>Ansaf Muhammed P T | Backend Developer Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <h1>Ansaf Muhammed P T</h1>
-        <h2 class="designation">Backend Developer</h2>
-        <div class="skills-container">
-            <span class="skill-pill">Java</span>
-            <span class="skill-pill">Spring Boot</span>
-            <span class="skill-pill">SQL</span>
+
+    <!-- Floating Nav Dots -->
+    <nav class="nav-dots" id="navDots">
+        <a href="#home" class="nav-dot active" data-label="Home"></a>
+        <a href="#about" class="nav-dot" data-label="About"></a>
+        <a href="#skills" class="nav-dot" data-label="Skills"></a>
+        <a href="#experience" class="nav-dot" data-label="Experience"></a>
+        <a href="#certifications" class="nav-dot" data-label="Certifications"></a>
+        <a href="#education" class="nav-dot" data-label="Education"></a>
+        <a href="#contact" class="nav-dot" data-label="Contact"></a>
+    </nav>
+
+    <!-- Scroll hint -->
+    <div class="scroll-hint" id="scrollHint">
+        <div class="scroll-mouse">
+            <div class="scroll-wheel"></div>
         </div>
-        <div class="status-badge">
-            <span class="status-dot"></span>
-            <span style="text-transform: lowercase;">vibecoding in progress<span class="blinking-dots"></span></span>
-        </div>
-        <p class="subtitle">Building something new. Check back soon.</p>
-        <div class="buttons-container">
-            <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="btn">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
-                </svg>
-                <span class="btn-text">LinkedIn</span>
-            </a>
-            <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank" class="btn hackerrank">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/>
-                </svg>
-                <span class="btn-text">HackerRank</span>
-            </a>
-            <a href="https://github.com/ansafmohdpt" target="_blank" class="btn github">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
-                    <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/>
-                </svg>
-                <span class="btn-text">GitHub</span>
-            </a>
-        </div>
-        <div class="vibecoding-label">
-            <div style="display: flex; align-items: center; justify-content: center; gap: 0.4rem;">
-                <span>Built with <span class="vibecoding-text">vibecoding</span> using</span>
-                <img src="assets/Google-Antigravity-Wordmark-White-Text.png" height="20" alt="Google Antigravity">
-            </div>
-        </div>
+        <span>Scroll to explore</span>
     </div>
+
+    <div class="cards-stack">
+
+        <!-- ==================== CARD 1: HOME ==================== -->
+        <section class="card card-home" id="home" style="--card-index: 0;">
+            <div class="card-inner">
+                <div class="home-content">
+                    <div class="greeting">Hello, I'm</div>
+                    <h1 class="hero-name">Ansaf Muhammed P T<span class="accent-dot">.</span></h1>
+                    <h2 class="hero-title">Backend Developer</h2>
+                    <div class="hero-tags">
+                        <span class="hero-tag">Java</span>
+                        <span class="tag-sep">•</span>
+                        <span class="hero-tag">Spring Boot</span>
+                        <span class="tag-sep">•</span>
+                        <span class="hero-tag">Microservices</span>
+                        <span class="tag-sep">•</span>
+                        <span class="hero-tag">SQL</span>
+                    </div>
+                    <p class="hero-bio">Building scalable, reliable backend systems with <strong>5+ years</strong> of professional experience in SaaS products and cloud infrastructure.</p>
+                    <div class="hero-socials">
+                        <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="social-btn social-linkedin" aria-label="LinkedIn">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </a>
+                        <a href="https://github.com/ansafmohdpt" target="_blank" class="social-btn social-github" aria-label="GitHub">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank" class="social-btn social-hackerrank" aria-label="HackerRank">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
+                        </a>
+                        <a href="https://twitter.com/ansafmohdpt" target="_blank" class="social-btn social-twitter" aria-label="X / Twitter">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                        </a>
+                        <a href="https://instagram.com/ansafmohdpt" target="_blank" class="social-btn social-instagram" aria-label="Instagram">
+                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 2: ABOUT ==================== -->
+        <section class="card card-about" id="about" style="--card-index: 1;">
+            <div class="card-inner">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="about-grid">
+                    <div class="about-text">
+                        <p>I'm a <strong>Java Backend Developer</strong> based in <strong>Trivandrum, India</strong>, with a passion for building robust, scalable applications that power real-world SaaS products.</p>
+                        <p>With professional experience across companies like <strong>Daiviksoft Technologies</strong>, <strong>Hyreo Technology Solutions</strong>, and <strong>Flytxt Mobile Solutions</strong>, I've contributed to production-grade systems handling everything from payment integrations to 20GB+ data migrations.</p>
+                        <p>I hold a <strong>B.Tech in Information Technology</strong> from Government Engineering College, Barton Hill, Trivandrum, and I'm constantly upskilling through certifications and competitive coding.</p>
+                    </div>
+                    <div class="about-stats">
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Years Experience</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">3</span>
+                            <span class="stat-label">Companies</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">5+</span>
+                            <span class="stat-label">Projects Delivered</span>
+                        </div>
+                        <div class="stat-card stat-card-highlight">
+                            <span class="stat-number">3+</span>
+                            <span class="stat-label">Teams Led</span>
+                            <span class="stat-sub">across multiple orgs</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Certifications</span>
+                        </div>
+                        <div class="stat-card">
+                            <span class="stat-number">500+</span>
+                            <span class="stat-label">LinkedIn Network</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 3: SKILLS ==================== -->
+        <section class="card card-skills" id="skills" style="--card-index: 2;">
+            <div class="card-inner">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">Skills & Tech</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+                            Languages
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-value="9/10"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
+                            <div class="skill-item" data-value="8.5/10"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                            <div class="skill-item" data-value="7/10"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
+                            <div class="skill-item" data-value="6/10"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--fill: 60%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
+                            Frameworks & Tools
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-value="9/10"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
+                            <div class="skill-item" data-value="8/10"><span class="skill-name">Microservices</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
+                            <div class="skill-item" data-value="7/10"><span class="skill-name">RabbitMQ</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
+                            <div class="skill-item" data-value="8/10"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
+                        </div>
+                    </div>
+                    <div class="skill-category">
+                        <h3 class="skill-cat-title">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
+                            Cloud & Database
+                        </h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-value="8.5/10"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
+                            <div class="skill-item" data-value="6.5/10"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 65%"></div></div></div>
+                            <div class="skill-item" data-value="7/10"><span class="skill-name">Apache Superset</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
+                            <div class="skill-item" data-value="7.5/10"><span class="skill-name">DBeaver</span><div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 4: EXPERIENCE ==================== -->
+        <section class="card card-experience" id="experience" style="--card-index: 3;">
+            <div class="card-inner">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">Experience</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Java Developer</h3>
+                                    <span class="timeline-company">Daiviksoft Technologies</span>
+                                </div>
+                                <span class="timeline-date">Oct 2024 — Present</span>
+                            </div>
+                            <p class="timeline-desc">Building scalable and reliable backend applications using Java and Spring Boot in a remote-first environment.</p>
+                            <div class="timeline-tags">
+                                <span>Java</span><span>Spring Boot</span><span>Remote</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Senior Software Engineer</h3>
+                                    <span class="timeline-company">Hyreo Technology Solutions</span>
+                                </div>
+                                <span class="timeline-date">Aug 2022 — Oct 2024</span>
+                            </div>
+                            <p class="timeline-desc">Managed go-live for SaaS clients including Creative Synergies Group and Daimler Truck. Migrated 20GB+ production data using MySQL & DBeaver. Integrated Apache Superset dashboards with Jinja templating. Stabilized report modules via Spring Boot AOP and enhanced microservice architecture with RabbitMQ.</p>
+                            <div class="timeline-tags">
+                                <span>Spring Boot</span><span>MySQL</span><span>RabbitMQ</span><span>Microservices</span><span>Apache Superset</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div>
+                                    <h3 class="timeline-role">Software Engineer</h3>
+                                    <span class="timeline-company">Flytxt Mobile Solutions</span>
+                                </div>
+                                <span class="timeline-date">Jan 2021 — Jul 2022</span>
+                            </div>
+                            <p class="timeline-desc">Contributed to a SaaS product on AWS Elastic Cloud with microservice architecture. Developed front-end pages using PolymerJS. Integrated Razorpay payment gateway using Angular.</p>
+                            <div class="timeline-tags">
+                                <span>AWS</span><span>PolymerJS</span><span>Angular</span><span>Razorpay</span><span>DevOps</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 5: CERTIFICATIONS ==================== -->
+        <section class="card card-certifications" id="certifications" style="--card-index: 4;">
+            <div class="card-inner">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">Certifications</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="certs-grid">
+                    <a href="https://www.linkedin.com/learning/certificates/b77a8cf7a8952ce7b216e0bfc0863c19c6fc25fe03e1499294b606f7511eb43f" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-microsoft">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.5v11.5H0zM12.5 0H24v11.5H12.5zM0 12.5h11.5V24H0zM12.5 12.5H24V24H12.5z"/></svg>
+                        </div>
+                        <h4>Generative AI Essentials</h4>
+                        <span class="cert-issuer">Microsoft</span>
+                        <span class="cert-date">Apr 2026</span>
+                    </a>
+                    <a href="https://www.linkedin.com/learning/certificates/07be09f5125e2e78c03ec5d33dc5c2268becd5da889c90b1d601754eee061ff9" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-spring">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 2.2c-1.1 3.1-3.3 5.1-6.1 6.7 1.8 2.2 2.8 5 2.8 8.1 0 .4 0 .8-.1 1.2l-.1.5c-.8-1.8-2.6-3-4.7-3-2.9 0-5.2 2.3-5.2 5.2 0 .2 0 .5.1.7-3.4-1.4-5.8-4.8-5.8-8.7 0-5.2 4.2-9.5 9.5-9.5 1.2 0 2.3.2 3.4.6.1-.3.1-.6.1-1 0-2.5-1.1-4.7-2.8-6.3 4.3.6 7.7 3 8.9 5.5z"/></svg>
+                        </div>
+                        <h4>Spring Boot 3 Essential Training</h4>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">Apr 2026</span>
+                    </a>
+                    <a href="https://www.linkedin.com/learning/certificates/e090352bb6000b9aeb88eca0f3282da96348363d36eb14670a4252657db2a3f8" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-jetbrains">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect width="24" height="24" rx="3"/><text x="3" y="19" fill="#fff" font-size="7" font-weight="bold" font-family="sans-serif">JB</text></svg>
+                        </div>
+                        <h4>Java Foundations</h4>
+                        <span class="cert-issuer">JetBrains</span>
+                        <span class="cert-date">Mar 2026</span>
+                    </a>
+                    <a href="https://www.hackerrank.com/certificates/468d302b081c" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-hackerrank">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
+                        </div>
+                        <h4>SQL (Advanced)</h4>
+                        <span class="cert-issuer">HackerRank</span>
+                        <span class="cert-date">Verified</span>
+                    </a>
+                    <a href="https://www.linkedin.com/learning/certificates/9f0f72e6aa773c6306d2d5c6433c470e158b8d8e2032ac8a81a438e82929a7c0" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-git">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                        </div>
+                        <h4>Git Essential Training</h4>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">Apr 2026</span>
+                    </a>
+                    <a href="https://www.linkedin.com/company/oracle" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-oracle">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.1 17.8c-3.2 0-5.8-2.6-5.8-5.8s2.6-5.8 5.8-5.8h9.8c3.2 0 5.8 2.6 5.8 5.8s-2.6 5.8-5.8 5.8H7.1zm9.5-2.5c1.8 0 3.3-1.5 3.3-3.3s-1.5-3.3-3.3-3.3H7.4c-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3h9.2z"/></svg>
+                        </div>
+                        <h4>MySQL Explorer</h4>
+                        <span class="cert-issuer">Oracle</span>
+                        <span class="cert-date cert-badge">Badge</span>
+                    </a>
+                    <a href="https://www.linkedin.com/learning/certificates/e5161b1725b1d5369c936cb227d6062f3700851ced24b9b4e4bd6920f4b1940f" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-linkedin">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                        </div>
+                        <h4>Java Object-Oriented Programming</h4>
+                        <span class="cert-issuer">LinkedIn</span>
+                        <span class="cert-date">Mar 2026</span>
+                    </a>
+                    <a href="https://www.coursera.org/account/accomplishments/certificate/47SDRVZ9J2BS" target="_blank" class="cert-card">
+                        <div class="cert-icon cert-coursera">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm4.8 17.1c-1.2.9-2.7 1.4-4.4 1.4-4.1 0-7.5-3.1-7.5-6.8S8.3 5 12.4 5c1.6 0 3 .4 4.2 1.2l-1.7 2.7c-.7-.5-1.6-.7-2.5-.7-2.3 0-4.1 1.5-4.1 3.5s1.9 3.5 4.1 3.5c1 0 1.9-.3 2.6-.8l1.8 2.7z"/></svg>
+                        </div>
+                        <h4>AWS Route53</h4>
+                        <span class="cert-issuer">Coursera</span>
+                        <span class="cert-date">Apr 2022</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 6: EDUCATION ==================== -->
+        <section class="card card-education" id="education" style="--card-index: 5;">
+            <div class="card-inner">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">Education</h2>
+                    <div class="section-line"></div>
+                </div>
+                <div class="education-grid">
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"></path></svg>
+                        </div>
+                        <div class="edu-details">
+                            <h3 class="edu-degree">Bachelor of Technology</h3>
+                            <span class="edu-field">Information Technology</span>
+                            <span class="edu-school">Government Engineering College, Barton Hill, Trivandrum</span>
+                            <div class="edu-meta">
+                                <span class="edu-year">2016 — 2020</span>
+                                <span class="edu-grade">CGPA: 7.08</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="edu-card">
+                        <div class="edu-icon">
+                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
+                        </div>
+                        <div class="edu-details">
+                            <h3 class="edu-degree">Higher Secondary Education</h3>
+                            <span class="edu-field">Bio-Maths</span>
+                            <span class="edu-school">Government Higher Secondary School, Thonnakkal</span>
+                            <div class="edu-meta">
+                                <span class="edu-year">2014 — 2016</span>
+                                <span class="edu-grade">94%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Volunteering -->
+                <div class="volunteer-section">
+                    <h3 class="volunteer-title">Community & Volunteering</h3>
+                    <div class="volunteer-grid">
+                        <div class="volunteer-card">
+                            <span class="volunteer-role">Student Volunteer</span>
+                            <span class="volunteer-org">National Service Scheme (NSS)</span>
+                            <span class="volunteer-period">Jul 2014 — Sep 2020 · 6 years</span>
+                        </div>
+                        <div class="volunteer-card">
+                            <span class="volunteer-role">Student Member</span>
+                            <span class="volunteer-org">Computer Society of India</span>
+                            <span class="volunteer-period">May 2018 — Aug 2020 · 2 years</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ==================== CARD 7: CONTACT ==================== -->
+        <section class="card card-contact" id="contact" style="--card-index: 6;">
+            <div class="card-inner">
+                <div class="contact-content">
+                    <h2 class="contact-heading">Let's Connect<span class="accent-dot">.</span></h2>
+                    <p class="contact-subtext">Interested in working together or just want to say hello? Reach out through any of the platforms below.</p>
+                    <div class="contact-links">
+                        <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="contact-link">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
+                            <span>LinkedIn</span>
+                            <span class="contact-handle">@ansafmohdpt</span>
+                        </a>
+                        <a href="https://github.com/ansafmohdpt" target="_blank" class="contact-link">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
+                            <span>GitHub</span>
+                            <span class="contact-handle">@ansafmohdpt</span>
+                        </a>
+                        <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank" class="contact-link">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
+                            <span>HackerRank</span>
+                            <span class="contact-handle">@ansafmohdpt</span>
+                        </a>
+                        <a href="https://twitter.com/ansafmohdpt" target="_blank" class="contact-link">
+                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                            <span>X / Twitter</span>
+                            <span class="contact-handle">@ansafmohdpt</span>
+                        </a>
+                    </div>
+                    <div class="vibecoding-label">
+                        <div class="vibecoding-inner">
+                            <span>Built with <span class="vibecoding-text">vibecoding</span> using</span>
+                            <img src="assets/Google-Antigravity-Wordmark-White-Text.png" height="18" alt="Google Antigravity">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
     <script src="script.js"></script>
 </body>
 </html>
