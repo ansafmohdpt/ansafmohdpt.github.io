@@ -185,6 +185,19 @@ document.addEventListener('DOMContentLoaded', () => {
             scrollHint.classList.toggle('hidden', scrollY > 60);
         }
 
+        // ── Reveal animations inside overflowing cards ─────────────
+        // IntersectionObserver tracks layout positions, not CSS transforms.
+        // When card-inner scrolls via translateY, elements below the fold
+        // become visually visible but the observer never fires for them.
+        // Fix: once a card starts its inner-scroll phase, mark all its
+        // unrevealed elements as visible so stagger animations play.
+        wrappers.forEach((wrapper, i) => {
+            if ((scrollY - metrics[i].wrapperTop) > 0) {
+                wrapper.querySelectorAll('.reveal:not(.visible), .reveal-stagger:not(.visible)')
+                    .forEach(el => el.classList.add('visible'));
+            }
+        });
+
         // ── Resume button: hero ↔ floating transition ──────────────
         // Home card (index 0) has no overflow, so transition phase
         // begins immediately: progress = scrolledIn / vh (0 → 1).
@@ -224,5 +237,33 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
     });
+
+    // ── Mobile touch: tap nav to expand labels, tap dot to navigate ──
+    const navDotsEl = document.getElementById('navDots');
+    if (navDotsEl) {
+        navDotsEl.addEventListener('touchstart', e => {
+            const dot = e.target.closest('.nav-dot');
+            if (!navDotsEl.classList.contains('touch-open')) {
+                // First tap: just open — don't navigate yet
+                e.preventDefault();
+                navDotsEl.classList.add('touch-open');
+            } else if (dot) {
+                // Nav already open + user tapped a dot: navigate then close
+                const i = navDots.indexOf(dot);
+                if (i !== -1 && metrics[i]) {
+                    window.scrollTo({ top: metrics[i].wrapperTop, behavior: 'smooth' });
+                }
+                navDotsEl.classList.remove('touch-open');
+                e.preventDefault();
+            }
+        }, { passive: false });
+
+        // Tap anywhere outside the nav closes it
+        document.addEventListener('touchstart', e => {
+            if (!navDotsEl.contains(e.target)) {
+                navDotsEl.classList.remove('touch-open');
+            }
+        }, { passive: true });
+    }
 
 });
