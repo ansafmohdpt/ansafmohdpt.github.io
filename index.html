@@ -1,17 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Ansaf Muhammed P T - Java Backend Developer Portfolio. Experienced in Spring Boot, Microservices, SQL, and Cloud.">
+
+    <!-- ── Primary SEO ───────────────────────────────────────────── -->
+    <title>Ansaf Muhammed P T | Java Backend Developer – Trivandrum, India</title>
+    <meta name="description"
+        content="Ansaf Muhammed P T is a Java Backend Developer based in Trivandrum, India with 5+ years of experience building scalable microservices using Spring Boot, MySQL, Apache Kafka, and RabbitMQ. Available for Java developer roles in Kerala and remote positions worldwide.">
+    <meta name="keywords"
+        content="Ansaf Muhammed, Ansaf Muhammed PT, Java Developer, Java Developer Trivandrum, Backend Developer, Backend Developer Kerala, Java Spring Boot Developer, Microservices Developer, Java Developer India, Spring Boot Developer, Java Software Engineer, Backend Engineer, Ansaf Dev, ansafmohdpt, Java Developer Portfolio, Software Engineer Trivandrum, Software Engineer Kerala">
     <meta name="author" content="Ansaf Muhammed P T">
+    <meta name="robots" content="index, follow">
     <meta name="theme-color" content="#0a0a1a">
-    <title>Ansaf Muhammed P T | Backend Developer Portfolio</title>
+    <link rel="canonical" href="https://ansafmohdpt.github.io/">
+
+    <!-- ── Open Graph (LinkedIn, WhatsApp, Facebook previews) ───── -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ansafmohdpt.github.io/">
+    <meta property="og:title" content="Ansaf Muhammed P T | Java Backend Developer – Trivandrum">
+    <meta property="og:description"
+        content="Java Backend Developer with 5+ years of experience. Expert in Spring Boot, MySQL, Kafka, and Microservices. Based in Trivandrum, India — open to remote roles.">
+    <meta property="og:image" content="https://ansafmohdpt.github.io/assets/hero_img.png">
+    <meta property="og:image:alt" content="Ansaf Muhammed P T – Java Backend Developer">
+    <meta property="og:locale" content="en_IN">
+    <meta property="og:site_name" content="Ansaf Muhammed P T – Portfolio">
+
+    <!-- ── Twitter / X card ─────────────────────────────────────── -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@ansafmohdpt">
+    <meta name="twitter:creator" content="@ansafmohdpt">
+    <meta name="twitter:title" content="Ansaf Muhammed P T | Java Backend Developer">
+    <meta name="twitter:description"
+        content="Java Backend Developer with 5+ years of experience in Spring Boot, Microservices, MySQL, and Kafka. Based in Trivandrum, India.">
+    <meta name="twitter:image" content="https://ansafmohdpt.github.io/assets/hero_img.png">
+
+    <!-- ── JSON-LD structured data (Google rich results) ────────── -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Ansaf Muhammed P T",
+        "alternateName": "Ansaf Muhammed",
+        "url": "https://ansafmohdpt.github.io/",
+        "image": "https://ansafmohdpt.github.io/assets/hero_img.png",
+        "jobTitle": "Java Backend Developer",
+        "description": "Java Backend Developer with 5+ years of experience building scalable microservices using Spring Boot, MySQL, Apache Kafka, and RabbitMQ.",
+        "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Trivandrum",
+            "addressRegion": "Kerala",
+            "addressCountry": "IN"
+        },
+        "sameAs": [
+            "https://www.linkedin.com/in/ansafmohdpt/",
+            "https://github.com/ansafmohdpt",
+            "https://twitter.com/ansafmohdpt",
+            "https://www.hackerrank.com/profile/ansafmohdpt"
+        ],
+        "knowsAbout": [
+            "Java", "Spring Boot", "Microservices", "MySQL", "Apache Kafka",
+            "RabbitMQ", "Liquibase", "REST APIs", "Backend Development",
+            "Software Engineering", "Team Leadership"
+        ],
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Government Engineering College Trivandrum",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Trivandrum",
+                "addressRegion": "Kerala",
+                "addressCountry": "IN"
+            }
+        }
+    }
+    </script>
+
     <link rel="stylesheet" href="styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
 
     <!-- Floating Nav Dots -->
@@ -20,8 +93,11 @@
         <a href="#about" class="nav-dot" data-label="About"></a>
         <a href="#skills" class="nav-dot" data-label="Skills"></a>
         <a href="#experience" class="nav-dot" data-label="Experience"></a>
+        <a href="#projects" class="nav-dot" data-label="Projects"></a>
         <a href="#certifications" class="nav-dot" data-label="Certifications"></a>
         <a href="#education" class="nav-dot" data-label="Education"></a>
+        <a href="#achievements" class="nav-dot" data-label="Achievements"></a>
+        <a href="#hobbies" class="nav-dot" data-label="Hobbies"></a>
         <a href="#contact" class="nav-dot" data-label="Contact"></a>
     </nav>
 
@@ -33,375 +109,819 @@
         <span>Scroll to explore</span>
     </div>
 
+    <!-- Floating resume button — visible on all sections except home -->
+    <a id="floatingResumeBtn"
+        href="#"
+        class="floating-resume-btn"
+        aria-label="Download resume">
+        <svg class="floating-resume-svg" width="18" height="18" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <polyline points="7 10 12 15 17 10" />
+            <line x1="12" y1="15" x2="12" y2="3" />
+        </svg>
+        <span class="floating-resume-text">Download resume</span>
+    </a>
+
     <div class="cards-stack">
 
         <!-- ==================== CARD 1: HOME ==================== -->
-        <section class="card card-home" id="home" style="--card-index: 0;">
-            <div class="card-inner">
-                <div class="home-content">
-                    <div class="greeting">Hello, I'm</div>
-                    <h1 class="hero-name">Ansaf Muhammed P T<span class="accent-dot">.</span></h1>
-                    <h2 class="hero-title">Backend Developer</h2>
-                    <div class="hero-tags">
-                        <span class="hero-tag">Java</span>
-                        <span class="tag-sep">•</span>
-                        <span class="hero-tag">Spring Boot</span>
-                        <span class="tag-sep">•</span>
-                        <span class="hero-tag">Microservices</span>
-                        <span class="tag-sep">•</span>
-                        <span class="hero-tag">SQL</span>
-                    </div>
-                    <p class="hero-bio">Building scalable, reliable backend systems with <strong>5+ years</strong> of professional experience in SaaS products and cloud infrastructure.</p>
-                    <div class="hero-socials">
-                        <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="social-btn social-linkedin" aria-label="LinkedIn">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </a>
-                        <a href="https://github.com/ansafmohdpt" target="_blank" class="social-btn social-github" aria-label="GitHub">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                        </a>
-                        <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank" class="social-btn social-hackerrank" aria-label="HackerRank">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
-                        </a>
-                        <a href="https://twitter.com/ansafmohdpt" target="_blank" class="social-btn social-twitter" aria-label="X / Twitter">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                        </a>
-                        <a href="https://instagram.com/ansafmohdpt" target="_blank" class="social-btn social-instagram" aria-label="Instagram">
-                            <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
-                        </a>
+        <div class="card-wrapper">
+            <section class="card card-home" id="home" style="--card-index: 0;">
+                <div class="card-inner">
+                    <div class="home-content">
+                        <div class="hero-layout">
+                            <div class="hero-info">
+                                <div class="greeting">Hello, I'm</div>
+                                <h1 class="hero-name">Ansaf Muhammed <span style="white-space: nowrap;">P T</span><span
+                                        class="accent-dot">.</span></h1>
+                                <h2 class="hero-title">Backend Developer</h2>
+                                <div class="hero-tags">
+                                    <span class="hero-tag">Java</span>
+                                    <span class="tag-sep">•</span>
+                                    <span class="hero-tag">Spring Boot</span>
+                                    <span class="tag-sep">•</span>
+                                    <span class="hero-tag">Microservices</span>
+                                    <span class="tag-sep">•</span>
+                                    <span class="hero-tag">SQL</span>
+                                </div>
+                                <p class="hero-bio">Building scalable, reliable backend systems with <strong>5+
+                                        years</strong> of professional experience in SaaS products and cloud
+                                    infrastructure.</p>
+                                <div class="hero-cta">
+                                    <a href="#" class="btn-download-resume">
+                                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none"
+                                            stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round" aria-hidden="true">
+                                            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                                            <polyline points="7 10 12 15 17 10" />
+                                            <line x1="12" y1="15" x2="12" y2="3" />
+                                        </svg>
+                                        Download resume
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="hero-image">
+                                <img src="assets/hero_img.png" alt="Ansaf Muhammed P T">
+                            </div>
+
+                            <div class="hero-socials">
+                                <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank"
+                                    class="social-btn social-linkedin" aria-label="LinkedIn">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                    </svg>
+                                </a>
+                                <a href="https://github.com/ansafmohdpt" target="_blank"
+                                    class="social-btn social-github" aria-label="GitHub">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                    </svg>
+                                </a>
+                                <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank"
+                                    class="social-btn social-hackerrank" aria-label="HackerRank">
+                                    <svg width="22" height="22" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z" />
+                                    </svg>
+                                </a>
+                                <a href="https://twitter.com/ansafmohdpt" target="_blank"
+                                    class="social-btn social-twitter" aria-label="X / Twitter">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+                                        <path
+                                            d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- ==================== CARD 2: ABOUT ==================== -->
-        <section class="card card-about" id="about" style="--card-index: 1;">
-            <div class="card-inner">
-                <div class="section-header">
-                    <span class="section-number">01</span>
-                    <h2 class="section-title">About Me</h2>
-                    <div class="section-line"></div>
+        <div class="card-wrapper">
+            <section class="card card-about" id="about" style="--card-index: 1;">
+                <!-- Video Backdrop -->
+                <div class="video-container">
+                    <video class="about-bg-video" autoplay muted loop playsinline>
+                        <source src="assets/about_bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
                 </div>
-                <div class="about-grid">
-                    <div class="about-text">
-                        <p>I'm a <strong>Java Backend Developer</strong> based in <strong>Trivandrum, India</strong>, with a passion for building robust, scalable applications that power real-world SaaS products.</p>
-                        <p>With professional experience across companies like <strong>Daiviksoft Technologies</strong>, <strong>Hyreo Technology Solutions</strong>, and <strong>Flytxt Mobile Solutions</strong>, I've contributed to production-grade systems handling everything from payment integrations to 20GB+ data migrations.</p>
-                        <p>I hold a <strong>B.Tech in Information Technology</strong> from Government Engineering College, Barton Hill, Trivandrum, and I'm constantly upskilling through certifications and competitive coding.</p>
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <h2 class="section-title">About Me</h2>
+                        <div class="section-line"></div>
                     </div>
-                    <div class="about-stats">
-                        <div class="stat-card">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Years Experience</span>
+                    <div class="about-grid">
+                        <div class="about-text">
+                            <p>I'm an ambitious and experienced <strong>Java Backend Developer</strong> and <strong>Team
+                                    Lead</strong> based in Trivandrum, India, specializing in designing and optimizing
+                                backend systems with Java 8+, Spring Boot, and event-driven architectures.</p>
+                            <p>With a proven track record across <strong>Daiviksoft Technologies</strong>,
+                                <strong>Hyreo</strong>, and <strong>Flytxt</strong>, I've successfully managed
+                                cross-stack teams, engineered robust microservice architectures using Java and
+                                Spring Boot, orchestrated automated workflows via n8n, and handled large-scale system
+                                deployments including 20GB+ production data migrations.
+                            </p>
+                            <p>I hold a <strong>B.Tech in Information Technology</strong> from Government Engineering
+                                College, Trivandrum. I aim to merge my technical expertise with strategic business
+                                management and operations to drive product innovation and scalable business solutions.
+                            </p>
                         </div>
-                        <div class="stat-card">
-                            <span class="stat-number">3</span>
-                            <span class="stat-label">Companies</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">5+</span>
-                            <span class="stat-label">Projects Delivered</span>
-                        </div>
-                        <div class="stat-card stat-card-highlight">
-                            <span class="stat-number">3+</span>
-                            <span class="stat-label">Teams Led</span>
-                            <span class="stat-sub">across multiple orgs</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">10+</span>
-                            <span class="stat-label">Certifications</span>
-                        </div>
-                        <div class="stat-card">
-                            <span class="stat-number">500+</span>
-                            <span class="stat-label">LinkedIn Network</span>
+                        <div class="about-stats">
+                            <div class="stat-card">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Years Experience</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">3</span>
+                                <span class="stat-label">Companies</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">5+</span>
+                                <span class="stat-label">Projects Delivered</span>
+                            </div>
+                            <div class="stat-card stat-card-highlight">
+                                <span class="stat-number">3+</span>
+                                <span class="stat-label">Teams Led</span>
+                                <span class="stat-sub">Cross-stack leadership</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">10+</span>
+                                <span class="stat-label">Certifications</span>
+                                <span class="stat-sub">Professional credentials</span>
+                            </div>
+                            <div class="stat-card">
+                                <span class="stat-number">500+</span>
+                                <span class="stat-label">LinkedIn Network</span>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- ==================== CARD 3: SKILLS ==================== -->
-        <section class="card card-skills" id="skills" style="--card-index: 2;">
-            <div class="card-inner">
-                <div class="section-header">
-                    <span class="section-number">02</span>
-                    <h2 class="section-title">Skills & Tech</h2>
-                    <div class="section-line"></div>
+        <div class="card-wrapper">
+            <section class="card card-skills" id="skills" style="--card-index: 2;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <h2 class="section-title">Skills &amp; Tech</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h3 class="skill-cat-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <polyline points="16 18 22 12 16 6"></polyline>
+                                    <polyline points="8 6 2 12 8 18"></polyline>
+                                </svg>
+                                Core Competencies
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag-pill">Java</span>
+                                <span class="skill-tag-pill">Spring Boot</span>
+                                <span class="skill-tag-pill">MySQL</span>
+                                <span class="skill-tag-pill">Liquibase</span>
+                                <span class="skill-tag-pill">Flyway</span>
+                                <span class="skill-tag-pill">Maven</span>
+                                <span class="skill-tag-pill">REST</span>
+                                <span class="skill-tag-pill">Troubleshooting</span>
+                                <span class="skill-tag-pill">n8n</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-cat-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+                                    <line x1="8" y1="21" x2="16" y2="21"></line>
+                                    <line x1="12" y1="17" x2="12" y2="21"></line>
+                                </svg>
+                                Basic Knowledge
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag-pill">JavaScript</span>
+                                <span class="skill-tag-pill">Angular</span>
+                                <span class="skill-tag-pill">Docker</span>
+                                <span class="skill-tag-pill">Kubernetes</span>
+                                <span class="skill-tag-pill">Python</span>
+                                <span class="skill-tag-pill">AWS EC2 &amp; ECS</span>
+                                <span class="skill-tag-pill">PostgreSQL</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-cat-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path>
+                                </svg>
+                                Tools &amp; IDEs
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag-pill">IntelliJ</span>
+                                <span class="skill-tag-pill">Eclipse</span>
+                                <span class="skill-tag-pill">Cursor</span>
+                                <span class="skill-tag-pill">Antigravity</span>
+                                <span class="skill-tag-pill">DBeaver</span>
+                                <span class="skill-tag-pill">MySQL Workbench</span>
+                                <span class="skill-tag-pill">VS Code</span>
+                                <span class="skill-tag-pill">Postman</span>
+                                <span class="skill-tag-pill">PuTTY</span>
+                                <span class="skill-tag-pill">Lens</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-cat-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M12 2l4 4-4 4"></path>
+                                    <path d="M16 6H8a2 2 0 0 0-2 2v8"></path>
+                                    <circle cx="6" cy="18" r="2"></circle>
+                                    <circle cx="12" cy="2" r="2"></circle>
+                                </svg>
+                                Version Control &amp; PM
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag-pill">Git</span>
+                                <span class="skill-tag-pill">SVN</span>
+                                <span class="skill-tag-pill">Jira</span>
+                                <span class="skill-tag-pill">Bitbucket</span>
+                                <span class="skill-tag-pill">Confluence</span>
+                            </div>
+                        </div>
+
+                        <div class="skill-category">
+                            <h3 class="skill-cat-title">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M16 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                    <circle cx="8.5" cy="7" r="4"></circle>
+                                    <polyline points="17 11 19 13 23 9"></polyline>
+                                </svg>
+                                Soft Skills
+                            </h3>
+                            <div class="skill-tags">
+                                <span class="skill-tag-pill">Problem Solving</span>
+                                <span class="skill-tag-pill">Leadership</span>
+                                <span class="skill-tag-pill">Public Speaking</span>
+                                <span class="skill-tag-pill">Volunteering</span>
+                                <span class="skill-tag-pill">Technical Aptitude</span>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="skills-grid">
-                    <div class="skill-category">
-                        <h3 class="skill-cat-title">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
-                            Languages
-                        </h3>
-                        <div class="skill-items">
-                            <div class="skill-item" data-value="9/10"><span class="skill-name">Java</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
-                            <div class="skill-item" data-value="8.5/10"><span class="skill-name">SQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
-                            <div class="skill-item" data-value="7/10"><span class="skill-name">HTML / CSS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
-                            <div class="skill-item" data-value="6/10"><span class="skill-name">JavaScript</span><div class="skill-bar"><div class="skill-fill" style="--fill: 60%"></div></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-cat-title">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect><line x1="8" y1="21" x2="16" y2="21"></line><line x1="12" y1="17" x2="12" y2="21"></line></svg>
-                            Frameworks & Tools
-                        </h3>
-                        <div class="skill-items">
-                            <div class="skill-item" data-value="9/10"><span class="skill-name">Spring Boot</span><div class="skill-bar"><div class="skill-fill" style="--fill: 90%"></div></div></div>
-                            <div class="skill-item" data-value="8/10"><span class="skill-name">Microservices</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
-                            <div class="skill-item" data-value="7/10"><span class="skill-name">RabbitMQ</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
-                            <div class="skill-item" data-value="8/10"><span class="skill-name">Git</span><div class="skill-bar"><div class="skill-fill" style="--fill: 80%"></div></div></div>
-                        </div>
-                    </div>
-                    <div class="skill-category">
-                        <h3 class="skill-cat-title">
-                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 10h-1.26A8 8 0 1 0 9 20h9a5 5 0 0 0 0-10z"></path></svg>
-                            Cloud & Database
-                        </h3>
-                        <div class="skill-items">
-                            <div class="skill-item" data-value="8.5/10"><span class="skill-name">MySQL</span><div class="skill-bar"><div class="skill-fill" style="--fill: 85%"></div></div></div>
-                            <div class="skill-item" data-value="6.5/10"><span class="skill-name">AWS</span><div class="skill-bar"><div class="skill-fill" style="--fill: 65%"></div></div></div>
-                            <div class="skill-item" data-value="7/10"><span class="skill-name">Apache Superset</span><div class="skill-bar"><div class="skill-fill" style="--fill: 70%"></div></div></div>
-                            <div class="skill-item" data-value="7.5/10"><span class="skill-name">DBeaver</span><div class="skill-bar"><div class="skill-fill" style="--fill: 75%"></div></div></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
         <!-- ==================== CARD 4: EXPERIENCE ==================== -->
-        <section class="card card-experience" id="experience" style="--card-index: 3;">
-            <div class="card-inner">
-                <div class="section-header">
-                    <span class="section-number">03</span>
-                    <h2 class="section-title">Experience</h2>
-                    <div class="section-line"></div>
-                </div>
-                <div class="timeline">
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <h3 class="timeline-role">Java Developer</h3>
-                                    <span class="timeline-company">Daiviksoft Technologies</span>
+        <div class="card-wrapper">
+            <section class="card card-experience" id="experience" style="--card-index: 3;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <h2 class="section-title">Experience</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-role">Java Developer</h3>
+                                        <span class="timeline-company">Daiviksoft Technologies</span>
+                                    </div>
+                                    <span class="timeline-date">Oct 2024 — Present</span>
                                 </div>
-                                <span class="timeline-date">Oct 2024 — Present</span>
-                            </div>
-                            <p class="timeline-desc">Building scalable and reliable backend applications using Java and Spring Boot in a remote-first environment.</p>
-                            <div class="timeline-tags">
-                                <span>Java</span><span>Spring Boot</span><span>Remote</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <h3 class="timeline-role">Senior Software Engineer</h3>
-                                    <span class="timeline-company">Hyreo Technology Solutions</span>
+                                <p class="timeline-desc">Led a team of four to build scalable backend services and
+                                    automated workflows using Java, Spring Boot, and n8n. Engineered an on-demand
+                                    synchronization architecture for CDISC libraries, empowering users to clone,
+                                    customize, and save tailored libraries natively. Designed a centralized,
+                                    asynchronous audit logging framework powered by Spring AOP and Apache Kafka, exposed
+                                    via REST APIs for cross-module embedding. Architected event-driven
+                                    microservices to maximize system performance, occasionally integrating Spring AI for
+                                    intelligent features.</p>
+                                <div class="timeline-tags">
+                                    <span>Java</span><span>Spring Boot</span><span>Apache
+                                        Kafka</span><span>Microservices</span><span>n8n</span><span>MySQL</span><span>Remote</span>
                                 </div>
-                                <span class="timeline-date">Aug 2022 — Oct 2024</span>
-                            </div>
-                            <p class="timeline-desc">Managed go-live for SaaS clients including Creative Synergies Group and Daimler Truck. Migrated 20GB+ production data using MySQL & DBeaver. Integrated Apache Superset dashboards with Jinja templating. Stabilized report modules via Spring Boot AOP and enhanced microservice architecture with RabbitMQ.</p>
-                            <div class="timeline-tags">
-                                <span>Spring Boot</span><span>MySQL</span><span>RabbitMQ</span><span>Microservices</span><span>Apache Superset</span>
                             </div>
                         </div>
-                    </div>
-                    <div class="timeline-item">
-                        <div class="timeline-marker"></div>
-                        <div class="timeline-content">
-                            <div class="timeline-header">
-                                <div>
-                                    <h3 class="timeline-role">Software Engineer</h3>
-                                    <span class="timeline-company">Flytxt Mobile Solutions</span>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-role">Senior Software Engineer & Team Lead</h3>
+                                        <span class="timeline-company">Hyreo Technology Solutions</span>
+                                    </div>
+                                    <span class="timeline-date">Aug 2022 — Oct 2024</span>
                                 </div>
-                                <span class="timeline-date">Jan 2021 — Jul 2022</span>
+                                <p class="timeline-desc">Led cross-stack teams in deploying SaaS solutions,
+                                    managing 10+ client change requests, and ensuring seamless rollouts for clients like
+                                    Creative Synergies Group and Daimler Truck. Migrated 20GB+ production data and
+                                    redesigned over 10 hierarchical data fields in MySQL. Integrated Apache Superset
+                                    dashboards with Jinja templating and developed KPI/risk identification frameworks.
+                                    Streamlined database change management by introducing Liquibase and improved
+                                    microservice architecture with RabbitMQ. Promoted to Team Lead within a short
+                                    tenure.</p>
+                                <div class="timeline-tags">
+                                    <span>Spring
+                                        Boot</span><span>MySQL</span><span>RabbitMQ</span><span>Microservices</span><span>Apache
+                                        Superset</span><span>Liquibase</span>
+                                </div>
                             </div>
-                            <p class="timeline-desc">Contributed to a SaaS product on AWS Elastic Cloud with microservice architecture. Developed front-end pages using PolymerJS. Integrated Razorpay payment gateway using Angular.</p>
-                            <div class="timeline-tags">
-                                <span>AWS</span><span>PolymerJS</span><span>Angular</span><span>Razorpay</span><span>DevOps</span>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <div class="timeline-header">
+                                    <div>
+                                        <h3 class="timeline-role">Software Engineer</h3>
+                                        <span class="timeline-company">Flytxt Mobile Solutions</span>
+                                    </div>
+                                    <span class="timeline-date">Jan 2021 — Jul 2022</span>
+                                </div>
+                                <p class="timeline-desc">Contributed to a cloud-based SaaS product hosted on AWS Elastic
+                                    Cloud utilizing a microservice architecture. Developed front-end components using
+                                    PolymerJS and integrated the Razorpay payment gateway into an Angular-based payment
+                                    system. Enhanced internal product monitoring tools and health endpoints for better
+                                    system observability and data-driven decision making.</p>
+                                <div class="timeline-tags">
+                                    <span>AWS</span><span>PolymerJS</span><span>Angular</span><span>Razorpay</span><span>DevOps</span>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- ==================== CARD 5: CERTIFICATIONS ==================== -->
-        <section class="card card-certifications" id="certifications" style="--card-index: 4;">
-            <div class="card-inner">
-                <div class="section-header">
-                    <span class="section-number">04</span>
-                    <h2 class="section-title">Certifications</h2>
-                    <div class="section-line"></div>
+        <!-- ==================== CARD 5: PROJECTS ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-projects" id="projects" style="--card-index: 4;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <h2 class="section-title">Projects</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <h3 class="project-title">Spring AOP Audit Logging Framework</h3>
+                            <span class="project-company">Daiviksoft Technologies</span>
+                            <ul class="project-bullets">
+                                <li>Designed a centralized, asynchronous audit logging framework built on Spring AOP and
+                                    Apache Kafka for event-driven tracking.</li>
+                                <li>Engineered the mechanism as a plug-and-play library, seamlessly integratable with
+                                    any running Java Spring Boot application.</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Data Architecture &amp; Advanced Reporting</h3>
+                            <span class="project-company">Hyreo Technology Solutions</span>
+                            <ul class="project-bullets">
+                                <li>Designed and implemented a new data storage architecture using MySQL and Spring Boot
+                                    to manage complex hierarchical data mappings, and built a robust user access control
+                                    system with page-level and tab-level configurations.</li>
+                                <li>Led the integration of Apache Superset dashboards into the product using Jinja
+                                    templating and SQL for advanced reporting, alongside developing a KPI and risk
+                                    identification framework for real-time insights.</li>
+                            </ul>
+                        </div>
+                        <div class="project-card">
+                            <h3 class="project-title">Microservice Enhancements &amp; Utilities</h3>
+                            <span class="project-company">Hyreo Technology Solutions</span>
+                            <ul class="project-bullets">
+                                <li>Created a comprehensive Utils class focusing on the java.time package, optimizing
+                                    date and time management across multiple microservice modules within the
+                                    application.</li>
+                                <li>Introduced and implemented Liquibase for database change management, enhancing the
+                                    efficiency and reliability of schema updates across the microservice architecture.
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-                <div class="certs-grid">
-                    <a href="https://www.linkedin.com/learning/certificates/b77a8cf7a8952ce7b216e0bfc0863c19c6fc25fe03e1499294b606f7511eb43f" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-microsoft">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h11.5v11.5H0zM12.5 0H24v11.5H12.5zM0 12.5h11.5V24H0zM12.5 12.5H24V24H12.5z"/></svg>
-                        </div>
-                        <h4>Generative AI Essentials</h4>
-                        <span class="cert-issuer">Microsoft</span>
-                        <span class="cert-date">Apr 2026</span>
-                    </a>
-                    <a href="https://www.linkedin.com/learning/certificates/07be09f5125e2e78c03ec5d33dc5c2268becd5da889c90b1d601754eee061ff9" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-spring">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M21.8 2.2c-1.1 3.1-3.3 5.1-6.1 6.7 1.8 2.2 2.8 5 2.8 8.1 0 .4 0 .8-.1 1.2l-.1.5c-.8-1.8-2.6-3-4.7-3-2.9 0-5.2 2.3-5.2 5.2 0 .2 0 .5.1.7-3.4-1.4-5.8-4.8-5.8-8.7 0-5.2 4.2-9.5 9.5-9.5 1.2 0 2.3.2 3.4.6.1-.3.1-.6.1-1 0-2.5-1.1-4.7-2.8-6.3 4.3.6 7.7 3 8.9 5.5z"/></svg>
-                        </div>
-                        <h4>Spring Boot 3 Essential Training</h4>
-                        <span class="cert-issuer">LinkedIn</span>
-                        <span class="cert-date">Apr 2026</span>
-                    </a>
-                    <a href="https://www.linkedin.com/learning/certificates/e090352bb6000b9aeb88eca0f3282da96348363d36eb14670a4252657db2a3f8" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-jetbrains">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><rect width="24" height="24" rx="3"/><text x="3" y="19" fill="#fff" font-size="7" font-weight="bold" font-family="sans-serif">JB</text></svg>
-                        </div>
-                        <h4>Java Foundations</h4>
-                        <span class="cert-issuer">JetBrains</span>
-                        <span class="cert-date">Mar 2026</span>
-                    </a>
-                    <a href="https://www.hackerrank.com/certificates/468d302b081c" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-hackerrank">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
-                        </div>
-                        <h4>SQL (Advanced)</h4>
-                        <span class="cert-issuer">HackerRank</span>
-                        <span class="cert-date">Verified</span>
-                    </a>
-                    <a href="https://www.linkedin.com/learning/certificates/9f0f72e6aa773c6306d2d5c6433c470e158b8d8e2032ac8a81a438e82929a7c0" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-git">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
-                        </div>
-                        <h4>Git Essential Training</h4>
-                        <span class="cert-issuer">LinkedIn</span>
-                        <span class="cert-date">Apr 2026</span>
-                    </a>
-                    <a href="https://www.linkedin.com/company/oracle" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-oracle">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M7.1 17.8c-3.2 0-5.8-2.6-5.8-5.8s2.6-5.8 5.8-5.8h9.8c3.2 0 5.8 2.6 5.8 5.8s-2.6 5.8-5.8 5.8H7.1zm9.5-2.5c1.8 0 3.3-1.5 3.3-3.3s-1.5-3.3-3.3-3.3H7.4c-1.8 0-3.3 1.5-3.3 3.3s1.5 3.3 3.3 3.3h9.2z"/></svg>
-                        </div>
-                        <h4>MySQL Explorer</h4>
-                        <span class="cert-issuer">Oracle</span>
-                        <span class="cert-date cert-badge">Badge</span>
-                    </a>
-                    <a href="https://www.linkedin.com/learning/certificates/e5161b1725b1d5369c936cb227d6062f3700851ced24b9b4e4bd6920f4b1940f" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-linkedin">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                        </div>
-                        <h4>Java Object-Oriented Programming</h4>
-                        <span class="cert-issuer">LinkedIn</span>
-                        <span class="cert-date">Mar 2026</span>
-                    </a>
-                    <a href="https://www.coursera.org/account/accomplishments/certificate/47SDRVZ9J2BS" target="_blank" class="cert-card">
-                        <div class="cert-icon cert-coursera">
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm4.8 17.1c-1.2.9-2.7 1.4-4.4 1.4-4.1 0-7.5-3.1-7.5-6.8S8.3 5 12.4 5c1.6 0 3 .4 4.2 1.2l-1.7 2.7c-.7-.5-1.6-.7-2.5-.7-2.3 0-4.1 1.5-4.1 3.5s1.9 3.5 4.1 3.5c1 0 1.9-.3 2.6-.8l1.8 2.7z"/></svg>
-                        </div>
-                        <h4>AWS Route53</h4>
-                        <span class="cert-issuer">Coursera</span>
-                        <span class="cert-date">Apr 2022</span>
-                    </a>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- ==================== CARD 6: EDUCATION ==================== -->
-        <section class="card card-education" id="education" style="--card-index: 5;">
-            <div class="card-inner">
-                <div class="section-header">
-                    <span class="section-number">05</span>
-                    <h2 class="section-title">Education</h2>
-                    <div class="section-line"></div>
+        <!-- ==================== CARD 6: CERTIFICATIONS ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-certifications" id="certifications" style="--card-index: 5;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <h2 class="section-title">Certifications</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="certs-grid">
+                        <!-- Generative AI — no tech logo, use Microsoft issuer -->
+                        <a href="https://www.linkedin.com/learning/certificates/b77a8cf7a8952ce7b216e0bfc0863c19c6fc25fe03e1499294b606f7511eb43f"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-microsoft">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M0 0h11.5v11.5H0zM12.5 0H24v11.5H12.5zM0 12.5h11.5V24H0zM12.5 12.5H24V24H12.5z" />
+                                </svg>
+                            </div>
+                            <h4>Generative AI Essentials</h4>
+                            <span class="cert-issuer">Microsoft</span>
+                            <span class="cert-date">Apr 2026</span>
+                        </a>
+                        <!-- Spring Boot — use Spring leaf logo -->
+                        <a href="https://www.linkedin.com/learning/certificates/07be09f5125e2e78c03ec5d33dc5c2268becd5da889c90b1d601754eee061ff9"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-spring">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="m23.693 10.7058-4.73-8.1844c-.4094-.7106-1.4166-1.2942-2.2402-1.2942H7.2725c-.819 0-1.8308.5836-2.2402 1.2942L.307 10.7058c-.4095.7106-.4095 1.873 0 2.5837l4.7252 8.189c.4094.7107 1.4166 1.2943 2.2402 1.2943h9.455c.819 0 1.826-.5836 2.2402-1.2942l4.7252-8.189c.4095-.7107.4095-1.8732 0-2.5838zM10.9763 5.7547c0-.5365.4377-.9742.9742-.9742s.9742.4377.9742.9742v5.8217c0 .5366-.4377.9742-.9742.9742s-.9742-.4376-.9742-.9742zm.9742 12.4294c-3.6427 0-6.6077-2.965-6.6077-6.6077.0047-2.0896.993-4.0521 2.6685-5.304a.8657.8657 0 0 1 1.2142.1788.8657.8657 0 0 1-.1788 1.2143c-2.1602 1.6048-2.612 4.6592-1.0072 6.8194 1.6049 2.1603 4.6593 2.612 6.8195 1.0072 1.2378-.9177 1.9673-2.372 1.9673-3.9157a4.8972 4.8972 0 0 0-1.9861-3.925c-.386-.2824-.466-.8284-.1836-1.2143.2824-.386.8283-.466 1.2143-.1835 1.6895 1.2471 2.6826 3.2238 2.6873 5.3228 0 3.6474-2.965 6.6077-6.6077 6.6077z" />
+                                </svg>
+                            </div>
+                            <h4>Spring Boot 3 Essential Training</h4>
+                            <span class="cert-issuer">LinkedIn</span>
+                            <span class="cert-date">Apr 2026</span>
+                        </a>
+                        <!-- Java Foundations — use Java coffee-cup logo -->
+                        <a href="https://www.linkedin.com/learning/certificates/e090352bb6000b9aeb88eca0f3282da96348363d36eb14670a4252657db2a3f8"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-java">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z" />
+                                </svg>
+                            </div>
+                            <h4>Java Foundations</h4>
+                            <span class="cert-issuer">JetBrains</span>
+                            <span class="cert-date">Mar 2026</span>
+                        </a>
+                        <!-- SQL Advanced — use MySQL logo (SQL is the tech, MySQL is the DB) -->
+                        <a href="https://www.hackerrank.com/certificates/468d302b081c" target="_blank"
+                            class="cert-card">
+                            <div class="cert-icon cert-mysql">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.22 6 2s-2.13 2-6 2-6-1.22-6-2 2.13-2 6-2zm6 10c0 .78-2.13 2-6 2s-6-1.22-6-2v-1.72C7.53 15.35 9.68 16 12 16s4.47-.65 6-1.72V15zm0-5c0 .78-2.13 2-6 2s-6-1.22-6-2V8.28C7.53 9.35 9.68 10 12 10s4.47-.65 6-1.72V10z" />
+                                </svg>
+                            </div>
+                            <h4>SQL (Advanced)</h4>
+                            <span class="cert-issuer">HackerRank</span>
+                            <span class="cert-date">Verified</span>
+                        </a>
+                        <!-- Git Essential Training — use Git logo -->
+                        <a href="https://www.linkedin.com/learning/certificates/9f0f72e6aa773c6306d2d5c6433c470e158b8d8e2032ac8a81a438e82929a7c0"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-git">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187" />
+                                </svg>
+                            </div>
+                            <h4>Git Essential Training</h4>
+                            <span class="cert-issuer">LinkedIn</span>
+                            <span class="cert-date">Apr 2026</span>
+                        </a>
+                        <!-- MySQL Explorer — use MySQL database cylinder logo -->
+                        <a href="https://mylearn.oracle.com/ou/learning-path/mysql-explorer/79674" target="_blank" class="cert-card">
+                            <div class="cert-icon cert-mysql">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 3C7.58 3 4 4.79 4 7v10c0 2.21 3.58 4 8 4s8-1.79 8-4V7c0-2.21-3.58-4-8-4zm0 2c3.87 0 6 1.22 6 2s-2.13 2-6 2-6-1.22-6-2 2.13-2 6-2zm6 10c0 .78-2.13 2-6 2s-6-1.22-6-2v-1.72C7.53 15.35 9.68 16 12 16s4.47-.65 6-1.72V15zm0-5c0 .78-2.13 2-6 2s-6-1.22-6-2V8.28C7.53 9.35 9.68 10 12 10s4.47-.65 6-1.72V10z" />
+                                </svg>
+                            </div>
+                            <h4>MySQL Explorer Badge</h4>
+                            <span class="cert-issuer">Oracle</span>
+                            <span class="cert-date">Nov 2024</span>
+                        </a>
+                        <!-- Java OOP — use Java coffee-cup logo -->
+                        <a href="https://www.linkedin.com/learning/certificates/e5161b1725b1d5369c936cb227d6062f3700851ced24b9b4e4bd6920f4b1940f"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-java">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M20 3H4v10c0 2.21 1.79 4 4 4h6c2.21 0 4-1.79 4-4v-3h2c1.11 0 2-.89 2-2V5c0-1.11-.89-2-2-2zm0 5h-2V5h2v3zM4 19h16v2H4z" />
+                                </svg>
+                            </div>
+                            <h4>Java Object-Oriented Programming</h4>
+                            <span class="cert-issuer">LinkedIn</span>
+                            <span class="cert-date">Mar 2026</span>
+                        </a>
+                        <!-- AWS Route53 — use AWS cloud logo -->
+                        <a href="https://www.coursera.org/account/accomplishments/certificate/47SDRVZ9J2BS"
+                            target="_blank" class="cert-card">
+                            <div class="cert-icon cert-aws">
+                                <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19.35 10.04A7.49 7.49 0 0 0 12 4C9.11 4 6.6 5.64 5.35 8.04A5.994 5.994 0 0 0 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z" />
+                                </svg>
+                            </div>
+                            <h4>AWS Route53</h4>
+                            <span class="cert-issuer">Coursera</span>
+                            <span class="cert-date">Apr 2022</span>
+                        </a>
+                    </div>
                 </div>
-                <div class="education-grid">
-                    <div class="edu-card">
-                        <div class="edu-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 10v6M2 10l10-5 10 5-10 5z"></path><path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"></path></svg>
+            </section>
+        </div>
+
+        <!-- ==================== CARD 7: EDUCATION ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-education" id="education" style="--card-index: 6;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">06</span>
+                        <h2 class="section-title">Education</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="education-grid">
+                        <div class="edu-card">
+                            <div class="edu-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M22 10v6M2 10l10-5 10 5-10 5z"></path>
+                                    <path d="M6 12v5c0 1.657 2.686 3 6 3s6-1.343 6-3v-5"></path>
+                                </svg>
+                            </div>
+                            <div class="edu-details">
+                                <h3 class="edu-degree">Bachelor of Technology</h3>
+                                <span class="edu-field">Information Technology</span>
+                                <span class="edu-school">Government Engineering College, Barton Hill, Trivandrum</span>
+                                <div class="edu-meta">
+                                    <span class="edu-year">2016 — 2020</span>
+                                    <span class="edu-grade">CGPA: 7.08</span>
+                                </div>
+                            </div>
                         </div>
-                        <div class="edu-details">
-                            <h3 class="edu-degree">Bachelor of Technology</h3>
-                            <span class="edu-field">Information Technology</span>
-                            <span class="edu-school">Government Engineering College, Barton Hill, Trivandrum</span>
-                            <div class="edu-meta">
-                                <span class="edu-year">2016 — 2020</span>
-                                <span class="edu-grade">CGPA: 7.08</span>
+                        <div class="edu-card">
+                            <div class="edu-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="1.5">
+                                    <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path>
+                                    <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path>
+                                </svg>
+                            </div>
+                            <div class="edu-details">
+                                <h3 class="edu-degree">Higher Secondary Education</h3>
+                                <span class="edu-field">Bio-Maths</span>
+                                <span class="edu-school">Government Higher Secondary School, Thonnakkal</span>
+                                <div class="edu-meta">
+                                    <span class="edu-year">2014 — 2016</span>
+                                    <span class="edu-grade">94%</span>
+                                </div>
                             </div>
                         </div>
                     </div>
-                    <div class="edu-card">
-                        <div class="edu-icon">
-                            <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"></path><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"></path></svg>
-                        </div>
-                        <div class="edu-details">
-                            <h3 class="edu-degree">Higher Secondary Education</h3>
-                            <span class="edu-field">Bio-Maths</span>
-                            <span class="edu-school">Government Higher Secondary School, Thonnakkal</span>
-                            <div class="edu-meta">
-                                <span class="edu-year">2014 — 2016</span>
-                                <span class="edu-grade">94%</span>
+                    <!-- Volunteering -->
+                    <div class="volunteer-section">
+                        <h3 class="volunteer-title">Community &amp; Volunteering</h3>
+                        <div class="volunteer-grid">
+                            <div class="volunteer-card">
+                                <span class="volunteer-role">Student Volunteer</span>
+                                <span class="volunteer-org">National Service Scheme (NSS)</span>
+                                <span class="volunteer-period">Jul 2014 — Sep 2020 · 6 years</span>
+                            </div>
+                            <div class="volunteer-card">
+                                <span class="volunteer-role">Student Member</span>
+                                <span class="volunteer-org">Computer Society of India</span>
+                                <span class="volunteer-period">May 2018 — Aug 2020 · 2 years</span>
                             </div>
                         </div>
                     </div>
                 </div>
-                <!-- Volunteering -->
-                <div class="volunteer-section">
-                    <h3 class="volunteer-title">Community & Volunteering</h3>
-                    <div class="volunteer-grid">
-                        <div class="volunteer-card">
-                            <span class="volunteer-role">Student Volunteer</span>
-                            <span class="volunteer-org">National Service Scheme (NSS)</span>
-                            <span class="volunteer-period">Jul 2014 — Sep 2020 · 6 years</span>
-                        </div>
-                        <div class="volunteer-card">
-                            <span class="volunteer-role">Student Member</span>
-                            <span class="volunteer-org">Computer Society of India</span>
-                            <span class="volunteer-period">May 2018 — Aug 2020 · 2 years</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
 
-        <!-- ==================== CARD 7: CONTACT ==================== -->
-        <section class="card card-contact" id="contact" style="--card-index: 6;">
-            <div class="card-inner">
-                <div class="contact-content">
-                    <h2 class="contact-heading">Let's Connect<span class="accent-dot">.</span></h2>
-                    <p class="contact-subtext">Interested in working together or just want to say hello? Reach out through any of the platforms below.</p>
-                    <div class="contact-links">
-                        <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="contact-link">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/></svg>
-                            <span>LinkedIn</span>
-                            <span class="contact-handle">@ansafmohdpt</span>
-                        </a>
-                        <a href="https://github.com/ansafmohdpt" target="_blank" class="contact-link">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z"/></svg>
-                            <span>GitHub</span>
-                            <span class="contact-handle">@ansafmohdpt</span>
-                        </a>
-                        <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank" class="contact-link">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z"/></svg>
-                            <span>HackerRank</span>
-                            <span class="contact-handle">@ansafmohdpt</span>
-                        </a>
-                        <a href="https://twitter.com/ansafmohdpt" target="_blank" class="contact-link">
-                            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
-                            <span>X / Twitter</span>
-                            <span class="contact-handle">@ansafmohdpt</span>
-                        </a>
+        <!-- ==================== CARD 8: ACHIEVEMENTS ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-achievements" id="achievements" style="--card-index: 7;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">07</span>
+                        <h2 class="section-title">Achievements</h2>
+                        <div class="section-line"></div>
                     </div>
-                    <div class="vibecoding-label">
-                        <div class="vibecoding-inner">
-                            <span>Built with <span class="vibecoding-text">vibecoding</span> using</span>
-                            <img src="assets/Google-Antigravity-Wordmark-White-Text.png" height="18" alt="Google Antigravity">
+                    <div class="achievements-list">
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path
+                                    d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z">
+                                </path>
+                            </svg>
+                            <span>Awarded Best Employee of the Month within the first quarter of joining Hyreo.</span>
+                        </div>
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="20 6 9 17 4 12"></polyline>
+                            </svg>
+                            <span>Redesigned over 10 hierarchical data fields in MySQL, completing the massive
+                                refactoring within one month.</span>
+                        </div>
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                                <circle cx="9" cy="7" r="4"></circle>
+                                <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                                <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                            </svg>
+                            <span>Successfully led 2+ customer rollouts and assisted 5+ others within one year, ensuring
+                                seamless product deployments globally.</span>
+                        </div>
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <polyline points="22 12 18 12 15 21 9 3 6 12 2 12"></polyline>
+                            </svg>
+                            <span>Promoted to Team Lead and Client Implementation Lead for demonstrated technical
+                                expertise and leadership.</span>
+                        </div>
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect>
+                                <line x1="12" y1="8" x2="12" y2="16"></line>
+                                <line x1="8" y1="12" x2="16" y2="12"></line>
+                            </svg>
+                            <span>Streamlined database change management by introducing Liquibase to enhance deployment
+                                reliability.</span>
+                        </div>
+                        <div class="achievement-item">
+                            <svg class="achievement-icon" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2">
+                                <path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1z"></path>
+                                <line x1="4" y1="22" x2="4" y2="15"></line>
+                            </svg>
+                            <span>Elected as Secretary of the College-Level Student Organization (2019-2020), managing
+                                strategic initiatives and student engagement.</span>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
+        <!-- ==================== CARD 9: HOBBIES ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-hobbies" id="hobbies" style="--card-index: 8;">
+                <div class="card-inner">
+                    <div class="section-header">
+                        <span class="section-number">08</span>
+                        <h2 class="section-title">Hobbies</h2>
+                        <div class="section-line"></div>
+                    </div>
+                    <div class="hobbies-grid">
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path d="M5.5 17a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
+                                    <path d="M18.5 17a2.5 2.5 0 100-5 2.5 2.5 0 000 5z"></path>
+                                    <path d="M9 14.5L15 8m0 0h-3.5m3.5 0v3.5"></path>
+                                    <path d="M5.5 11V7l3-3.5h7L18.5 7v4.5"></path>
+                                </svg>
+                            </div>
+                            <h3>Riding Motorcycle</h3>
+                            <p>Exploring the open road and the thrill of the ride.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M23 19a2 2 0 01-2 2H3a2 2 0 01-2-2V8a2 2 0 012-2h4l2-3h6l2 3h4a2 2 0 012 2z">
+                                    </path>
+                                    <circle cx="12" cy="13" r="4"></circle>
+                                </svg>
+                            </div>
+                            <h3>Photography</h3>
+                            <p>Capturing moments through my lens, focusing on landscapes and street photography.</p>
+                        </div>
+                        <div class="hobby-card">
+                            <div class="hobby-icon">
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <rect x="2" y="6" width="20" height="12" rx="2"></rect>
+                                    <path d="M6 12h4m-2-2v4"></path>
+                                    <circle cx="15" cy="10" r="1"></circle>
+                                    <circle cx="15" cy="14" r="1"></circle>
+                                    <circle cx="18" cy="12" r="1"></circle>
+                                </svg>
+                            </div>
+                            <h3>Playing Games</h3>
+                            <p>Enjoying strategic and immersive gaming experiences.</p>
+                        </div>
+                    </div>
+                    <a href="https://instagram.com/ansafmohdpt" target="_blank" class="hobbies-cta">
+                        <p>For more personal glimpses, connect with me on Instagram</p>
+                        <div class="social-btn social-instagram">
+                            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                                <path
+                                    d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                            </svg>
+                        </div>
+                    </a>
+                </div>
+            </section>
+        </div>
+
+        <!-- ==================== CARD 10: CONTACT ==================== -->
+        <div class="card-wrapper">
+            <section class="card card-contact" id="contact" style="--card-index: 9;">
+                <!-- Video Backdrop -->
+                <div class="video-container">
+                    <video class="about-bg-video" autoplay muted loop playsinline>
+                        <source src="assets/contact_bg.mp4" type="video/mp4">
+                    </video>
+                    <div class="video-overlay"></div>
+                </div>
+                <div class="card-inner">
+                    <div class="contact-content">
+                        <h2 class="contact-heading">Let's Connect<span class="accent-dot">.</span></h2>
+                        <p class="contact-subtext">Interested in working together or just want to say hello? Reach out
+                            through any of the platforms below.</p>
+                        <div class="contact-links">
+                            <a href="mailto:ansafdev01@gmail.com" class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z">
+                                    </path>
+                                    <polyline points="22,6 12,13 2,6"></polyline>
+                                </svg>
+                                <span>Email</span>
+                                <span class="contact-handle" style="white-space: nowrap;">Drop a note</span>
+                            </a>
+                            <a href="tel:+919074849016" class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                    stroke-width="2">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <span>Phone</span>
+                                <span class="contact-handle" style="white-space: nowrap;">+91 9074849016</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/ansafmohdpt/" target="_blank" class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                                </svg>
+                                <span>LinkedIn</span>
+                                <span class="contact-handle">@ansafmohdpt</span>
+                            </a>
+                            <a href="https://github.com/ansafmohdpt" target="_blank" class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+                                </svg>
+                                <span>GitHub</span>
+                                <span class="contact-handle">@ansafmohdpt</span>
+                            </a>
+                            <a href="https://www.hackerrank.com/profile/ansafmohdpt" target="_blank"
+                                class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M12 0L1.6 6v12L12 24l10.4-6V6L12 0zm5.1 16h-2.6v-3.7h-5v3.7H6.9v-8h2.6v3.4h5V8h2.6v8z" />
+                                </svg>
+                                <span>HackerRank</span>
+                                <span class="contact-handle">@ansafmohdpt</span>
+                            </a>
+                            <a href="https://twitter.com/ansafmohdpt" target="_blank" class="contact-link">
+                                <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor">
+                                    <path
+                                        d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                                </svg>
+                                <span>X / Twitter</span>
+                                <span class="contact-handle">@ansafmohdpt</span>
+                            </a>
+                        </div>
+                        <div class="vibecoding-label">
+                            <div class="vibecoding-inner">
+                                <span>Built entirely with <span class="vibecoding-text">vibecoding</span> using</span>
+                                <img src="assets/Google-Antigravity-Wordmark-White-Text.png" height="18"
+                                    alt="Google Antigravity">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
 
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
