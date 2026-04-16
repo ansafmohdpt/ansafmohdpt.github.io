@@ -1,26 +1,28 @@
 # Ansaf Muhammed P T | Developer Portfolio
 
-A sleek, ultra-modern, single-page professional portfolio built utilizing core web technologies (`HTML5`, `CSS3`, `Vanilla JS`). 
+A high-performance, immersive, single-page professional portfolio built with a focus on motion design and backend engineering excellence.
 
-## 🚀 Design Aesthetic
-- **Glassmorphism:** Elegant, frosted-glass UI components set against an immersive dark-tech abstract background.
-- **Typography:** Custom Web Fonts tailored for software engineers: `Space Grotesk` for striking headings, `Google Sans Flex` for branding accents, and `Inter` for highly-legible body text.
-- **Micro-interactions:** Custom CSS hover states that seamlessly expand interactive elements (like the dynamic social links) to unveil fully aligned text gracefully. Keyframe-animated blinking typing indicators natively bound to `inline-block` constraints to eliminate flex-layout jitter.
+## 🚀 Experience the Design
+- **Stacked Card Architecture:** A custom-built JavaScript scroll engine that creates a physical sense of depth, with sections stacking seamlessly as you explore.
+- **Micro-Animations:** Linear counter animations, glassmorphism overlays, and smooth layout transitions that feel alive.
+- **Premium Branding:** Utilizing `Space Grotesk` and `Inter` typography paired with a curated dark-tech aesthetic (`#0a0a1a`).
+- **Interactive Contact HUD:** A bespoke modal system for Email and Phone contacts, offering one-click actions or clipboard copying with instant toast feedback.
 
-## 💻 Tech Stack
-- **HTML5:** Semantic architecture optimized for clean DOM trees.
-- **CSS3:** Advanced Flexbox layout grids, Backdrop Filters, Custom Keyframe Animations, Modular Transitions, and Mobile-first Responsive Design integration.
-- **Vanilla JS:** Ready for dynamic integrations without heavy framework bloat.
+## 💻 Technical Excellence
+- **Vanilla Core:** Zero-dependency architecture (`HTML5`, `CSS3`, `Vanilla JS`) ensuring lightning-fast load times and perfect SEO scores.
+- **Semantic SEO & Schema:** Full JSON-LD structured data integration for People/Occupation rich results, optimized meta-tags for LinkedIn/X previews, and hierarchical heading structures.
+- **Responsive Fluidity:** A mobile-first approach that adapts complex stacking visuals into a clean, vertical mobile experience.
+- **Vibecoding Workflow:** Architected and iterated using **Google Antigravity**, pushing the boundaries of AI-assisted web development.
 
-## 🛠 Features
-- Fully responsive design targeting seamless experiences on both mobile and desktop.
-- Optimized SEO meta-tags pre-mapped for `theme-color` standardizations.
-- Zero-dependency `pure CSS` UI engineering utilizing native linear gradients and smooth box shadows.
-- Integrated SVGs natively optimizing asset delivery without base64 bloat.
+## 🛠 Tech Stack
+- **Frontend:** HTML5, Modern CSS selectors (Flex/Grid), Backdrop Filters, Keyframes.
+- **Logic:** Vanilla JavaScript, IntersectionObserver, rAF (requestAnimationFrame) throttled scrolling.
+- **Assets:** Optimized SVG icons, high-quality video backdrops, and AI-generated branding assets.
 
-## 🚦 Deployment & Hosting
-This project uses pure Vanilla web technologies. There are **no build steps, bundlers, or artifact compilations required**.
+## 🚦 Deployment
+The portfolio is hosted on **GitHub Pages**. 
+- **URL:** [ansafmohdpt.github.io](https://ansafmohdpt.github.io/)
+- **Build-free:** No compilers or bundlers. The code is the production asset.
 
-The site is hosted directly from the repository via **GitHub Pages**. Any updates to `index.html`, `styles.css`, or `script.js` are pushed straight to production instantly.
-
-To run or test locally, simply double-click `index.html` to view it in any modern browser.
+---
+Built with ⚡ by Ansaf Muhammed P T and Google Antigravity.
