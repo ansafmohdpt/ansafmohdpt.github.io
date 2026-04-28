@@ -376,4 +376,41 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { passive: true });
     }
 
+    // ── Vibe Coded Badge — mobile tap-to-toast ────────────────────
+    const vibeToast     = document.getElementById('vibeToast');
+    const vibeToastClose = document.getElementById('vibeToastClose');
+    const vibecodeBadge  = document.getElementById('vibecodeBadge');
+    let   vibeToastTimer = null;
+
+    function showVibeToast() {
+        if (!vibeToast) return;
+        clearTimeout(vibeToastTimer);
+        vibeToast.classList.remove('vibe-toast--hide');
+        vibeToast.classList.add('vibe-toast--show');
+        // Auto-dismiss after 5 seconds
+        vibeToastTimer = setTimeout(hideVibeToast, 5000);
+    }
+
+    function hideVibeToast() {
+        if (!vibeToast) return;
+        clearTimeout(vibeToastTimer);
+        vibeToast.classList.remove('vibe-toast--show');
+        vibeToast.classList.add('vibe-toast--hide');
+    }
+
+    if (vibecodeBadge) {
+        vibecodeBadge.addEventListener('click', e => {
+            // Only trigger on touch / narrow screens where hover tooltip is hidden
+            if (window.matchMedia('(max-width: 768px)').matches ||
+                window.matchMedia('(hover: none)').matches) {
+                e.stopPropagation();
+                showVibeToast();
+            }
+        });
+    }
+
+    if (vibeToastClose) {
+        vibeToastClose.addEventListener('click', hideVibeToast);
+    }
+
 });
